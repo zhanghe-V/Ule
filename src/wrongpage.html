@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <!--seo:搜索引擎优化-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>错题系统</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>
+                <img src="http://www.qfedu.com/images/new_logo.png">
+                <small>易错系统</small>
+            </h1>
+        </div>
+        <!-- 添加错题的表单(模态框) -->
+        <p>
+            <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+                <span class="glyphicon glyphicon-cog"></span> 添加错题
+            </button>
+        </p>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">请详细填写重点信息:</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="php/add.php">
+                            <div class="form-group">
+                                <label for="wrongcontent">标题</label>
+                                <input type="text" class="form-control" id="wrongcontent" placeholder="问题标题">
+                            </div>
+                            <div class="form-group">
+                                <label for="wrongwhere">问题描述</label>
+                                <input type="text" class="form-control" id="wrongwhere" placeholder="请详细描述您的出错问题">
+                            </div>
+                            <div class="form-group">
+                                <label for="idea">解决方案</label>
+                                <textarea class="form-control" id="idea" placeholder="请详细描述您的解决方案"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="btn" class="btn btn-success center-block" data-dismiss="modal">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--显示数据的表格-->
+        <table class="table table-bordered table-hover table-responsive" id="table1">
+            <thead style="background: rgba(0,0,0,.3)">
+                <th class="col-md-1">编号</th>
+                <th class="col-md-2">标题</th>
+                <th class="col-md-2">问题描述</th>
+                <th class="col-md-4">解决方案</th>
+                <th class="col-md-2">上传时间</th>
+                <th class="col-md-1">删除</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript" src="script/thirdplugins/jquery.min.js"></script>
+    <script type="text/javascript" src="script/thirdplugins/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script/js/wrong.js"></script>
+</body>
+
+</html>

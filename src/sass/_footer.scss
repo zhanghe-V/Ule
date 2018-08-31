@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+/**/
+
+
+/*------------------footer---------------------*/
+
+$w:#fff;
+$bg1603:url(../images/footer1603.png?t=1) no-repeat;
+body .wid1300 {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: $w;
+    .foot-banner {
+        height: 56px;
+        border: solid 1px #ddd;
+        border-width: 1px 0;
+        padding: 17px 0;
+        background: $bg1603 0 -125px;
+        a {
+            float: left;
+            text-indent: -9999px;
+            overflow: hidden;
+            cursor: pointer;
+            height: 52px;
+        }
+        .fb-left {
+            width: 80px;
+            margin-left: 30px;
+        }
+        .fb-tom {
+            width: 120px;
+            margin-left: 20px;
+        }
+        .fb-pzbz {
+            width: 210px;
+            margin-left: 80px;
+        }
+        .fb-safe {
+            width: 220px;
+            margin-left: 105px;
+        }
+    }
+    .foot-helper {
+        padding: 10px 0 20px;
+        text-align: left;
+        overflow: hidden;
+        width: 100%;
+        li {
+            padding-right: 96px;
+            padding-top: 5px;
+            float: left;
+            width: 120px;
+            h4 {
+                color: #666;
+                line-height: 22px;
+                margin: 0 0 5px;
+                border-bottom: 1px dotted #ccc;
+            }
+            a {
+                display: block;
+                line-height: 22px;
+                color: #888;
+            }
+        }
+    }
+    .foot-license {
+        line-height: 20px;
+        padding: 15px 0 5px;
+        text-align: center;
+        color: #999;
+        border-top: solid 1px #ddd;
+        ul {
+            overflow: hidden;
+            li {
+                float: left;
+                height: 20px;
+                margin-right: 9px;
+                font-family: "microsoft yahei";
+            }
+        }
+    }
+    .foot-copyright {
+        line-height: 20px;
+        color: #999;
+        font-family: verdana;
+    }
+    .foot-iconlink {
+        background: $bg1603;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        a {
+            display: block;
+            float: left;
+            width: 100px;
+            height: 34px;
+            margin-right: 10px;
+            text-indent: -10000px;
+            overflow: hidden;
+        }
+    }
+}
